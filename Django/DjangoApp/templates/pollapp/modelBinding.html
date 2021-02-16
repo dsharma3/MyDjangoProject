@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    </head>
+    <body>
+
+    {%if topic %}
+    <ul>
+    {%for item in topic%}
+        <li>{{item.top_name}}</li>    
+    {% endfor %}
+    
+    {% else %}
+        <div>There is no topic</div>
+
+    {% endif %}
+    </body>
+<html>
